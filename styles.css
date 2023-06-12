@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background:linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%) ;
+}
+
+body {
+  background: var(--background);
+  width: 100vw;
+  height: 100vh;
+  color: #FFF;
+
+  display: flex;
+  padding-top: 12.6rem;
+  justify-content: center;
+}
+
+.cotent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.cotent > img {
+  width: 8.7rem;
+  height: 6.2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 11px;
+  gap: 0 1.7rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2.6rem;
+}
+
+button >span > img {
+  width: 3.5rem;
+  height: 2.5rem;
+  margin-top: .5rem;
+}
+
+.cotent > p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.1;
+  width: 38.1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-areas: 
+  "img h2"
+  "img p"
+  ;
+  gap: 3.4rem;
+  grid-template-rows: .5rem 1fr;
+  margin-bottom: 3rem;
+}
+
+.card img {
+  grid-area: img;
+  width: 17.1rem;
+  height: 24.3rem;
+}
+
+.card h2 {
+  grid-area: h2;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--subtitle);
+}
+
+.card p {
+  grid-area: p;
+  width: 42.3rem;
+  font-size: 1.6rem;
+  color: var(--subtitle);
+}
+
+
+/* ======== responsive ======== */
+
+@media(max-width:700px) {
+  body {
+    padding-top: 5rem;
+    
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media(max-width:550px) {
+  :root{
+    font-size: 55%;
+  }
+}
+
+@media(max-width:480px) {
+  :root{
+    font-size: 50%;
+  }
+}
+
+@media(max-width:400px) {
+  :root{
+    font-size: 45%;
+  }
+}
+
+@media(max-width:360px) {
+  :root{
+    font-size: 40%;
+  }
+}
